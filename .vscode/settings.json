@@ -1,0 +1,6 @@
+{
+    "editor.formatOnSave": true,
+    "[cuda-cpp]": {
+        "editor.defaultFormatter": "llvm-vs-code-extensions.vscode-clangd"
+    }
+}
