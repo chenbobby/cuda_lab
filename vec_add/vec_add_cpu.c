@@ -4,7 +4,7 @@
 #include <stdlib.h>
 #include <time.h>
 
-#define N (10 * (1 << 20)) // 10 MiB
+#define N (10 * 1000 * 1000)
 
 void vec_add_cpu(float* out, float* a, float* b, int n) {
     for (int i = 0; i < n; i++) {

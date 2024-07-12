@@ -13,8 +13,8 @@
 ## Performance Profiling Setup
 1. Ensure that the `perf_event_paranoid` level is <= 2.
     1. Check via `cat /proc/sys/kernel/perf_event_paranoid`
-    1. Update via `echo 2 > /proc/sys/kernel/perf_event_paranoid`
-    1. Configure reboot via `echo kernel.perf_event_paranoid=2 > /etc/sysctl.d/local.conf`
+    1. Update via `echo -1 > /proc/sys/kernel/perf_event_paranoid`
+    1. Configure reboot via `echo kernel.perf_event_paranoid=-1 > /etc/sysctl.d/local.conf`
 1. Ensure that Ubuntu Linux distro is >= 4.3
     1. Check via `uname -a`
 1. Ensure that `glibc` version is >= 2.17

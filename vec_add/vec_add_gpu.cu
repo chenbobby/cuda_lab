@@ -1,7 +1,7 @@
 #include <cstdio>
 #include <time.h>
 
-#define N (10 * (1 << 20)) // 10 MiB
+#define N (10 * 1000 * 1000)
 
 __global__ void vec_add_kernel(float* out, float* a, float* b, int n) {
     int i = blockIdx.x * blockDim.x + threadIdx.x;
