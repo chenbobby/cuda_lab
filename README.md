@@ -30,3 +30,12 @@
     1. You may need to fix broken installs via `apt --fix-broken install`
 1. Check your installation.
     1. Check via `nsys status --environment`
+
+## Install Golang tools
+1. Install the `go` compiler.
+    1. `apt install golang-go`
+1. Configure startup profile to add Go to `$PATH`.
+    1. `echo 'export PATH=$HOME/go/bin:$PATH' >> $HOME/.profile`
+    1. `source ~/.profile`
+1. Install the `dlv` debugger.
+    1. `go install github.com/go-delve/delve/cmd/dlv@latest`
