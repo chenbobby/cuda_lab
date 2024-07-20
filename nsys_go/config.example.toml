@@ -1,0 +1,6 @@
+# Build target directory path
+targetDirectoryPath = "build"
+workloadCommand = "../vec_add/build/vec_add_gpu"
+nsysRepReportOutputPath = "build/profile/report.nsys-rep"
+sqliteReportOutputPath = "build/profile/report.sqlite"
+duckdbReportOutputPath = "build/profile/report.duckdb"
